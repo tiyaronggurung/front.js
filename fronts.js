@@ -11,9 +11,9 @@ class SLL {
     }
 
     addFront(val) {
-        var newNode = new SLLNode(val); 
-        newNode.next = this.head; 
-        this.head = newNode; 
+        var createNode = new SLLNode(val); 
+        createNode.next = this.head; 
+        this.head = createNode; 
         return this.head; 
     }
 
@@ -21,13 +21,13 @@ class SLL {
         if (!this.head) {
             return this.head;
         }
-        var removedNode = this.head; 
-        this.head = removedNode.next;
-        removedNode.next = null;
+        var deleteNode = this.head; 
+        this.head = deleteNode.next;
+        deleteNode.next = null;
         return this.head;
     }
 
-    front() {
+    front() {  
         if (!this.head) {
             return null;
         } else {
